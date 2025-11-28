@@ -32,11 +32,11 @@ Qgevelonbekend=Ugevelonbekend*Agevelonbekend*(Tinside-Toutside)
 Qdak=Udak*Adak*(Tinside-Toutside)
 Qfloor=Ufloor*Afloor*(Tinside-Toutside)
 Qtotal=Qwindows+Qdoors+Qgevels+Qgevelonbekend+Qdak+Qfloor
-print("Total Heat Loss (W): ", Qtotal)
+//print("Total Heat Loss (W): ", Qtotal)
 //Define Heat Pump properties
 COP_heatpump=4.0 //Coefficient of Performance
 Qheatpump=Qtotal/COP_heatpump
-print("Heat Pump Output Required (W): ", Qheatpump)
+//print("Heat Pump Output Required (W): ", Qheatpump)
 //Define Auxiliary Heater properties
 COP_auxiliary=1.0 //Electric resistance heater  
 
