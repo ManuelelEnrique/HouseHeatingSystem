@@ -35,6 +35,7 @@ Qtotal=Qwindows+Qdoors+Qgevels+Qgevelonbekend+Qdak+Qfloor
 //print("Total Heat Loss (W): ", Qtotal)
 //Define Heat Pump properties
 COP_heatpump=4.0 //Coefficient of Performance
+SCOP_heatpump=4.78 //Seasonal Coefficient of Performance
 Qheatpump=Qtotal/COP_heatpump
 //print("Heat Pump Output Required (W): ", Qheatpump)
 //Define Auxiliary Heater properties
