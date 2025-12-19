@@ -41,8 +41,9 @@ Qheatpump=(Qtotal/SCOP_heatpump)/1000
 
 //Prepare dinamic simulation
 rho_air=1,29
-VolHous=603
+VolHouse=603
 Atotal=Awindows+Adoors+Agevels+Agevelonbekend+Adak+Afloor
 Cair=1005
+k=Atotal*3/(rho_air*VolHouse*1005)
 
 
