@@ -3,13 +3,13 @@
 
 // Define U
 
-Uwindows=2.9 // [/W/m2K]
+Uwindows=1.1// [/W/m2K]
 Udoors=3.4
 UdoorsOnbekend=2.70
 Udak=1/2.00 //because is given in Rc and U=1/Rc
 Ugevels=1/1.69
 Ugevelonbekend=1/2
-Ufloor=1/3.5 // [/W/m2K] Tobe verified
+Ufloor=1/3.5 // [/W/m2K] To be verified
 
 
 //Define Areas
@@ -35,9 +35,9 @@ Qtotal=Qwindows+Qdoors+Qgevels+Qgevelonbekend+Qdak+Qfloor
 //print("Total Heat Loss (W): ", Qtotal)
 //Define Heat Pump properties
 COP_heatpump=4.0 //Coefficient of Performance
-SCOP_heatpump=4.78 //Seasonal Coefficient of Performance
-Qheatpump=Qtotal/COP_heatpump
+SCOP_heatpump=4.7 //Seasonal Coefficient of Performance
+Qheatpump=Qtotal/SCOP_heatpump
+Qheatpump=(Qtotal/SCOP_heatpump)/1000
 //print("Heat Pump Output Required (W): ", Qheatpump)
 //Define Auxiliary Heater properties
-COP_auxiliary=1.0 //Electric resistance heater  
 
